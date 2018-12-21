@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/button_focused1"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivityMaker">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorGreen"
+        android:text="Create Workshop"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_margin="@dimen/layout_margin_workshop"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/firstActivity"
+                android:layout_height="wrap_content">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite">
+
+                    <EditText
+                        android:id="@+id/workshopname"
+                        android:layout_width="match_parent"
+                        android:layout_margin="4dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Workshop name" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_margin="4dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:text="Creation date" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite">
+
+                    <EditText
+                        android:id="@+id/location"
+                        android:layout_width="match_parent"
+                        android:layout_margin="4dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Location" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--<Spinner-->
+                    <!--android:id="@+id/facilitator"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="4dp"-->
+                    <!--android:background="@color/colorWhite" />-->
+
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_margin="8dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/colorWhite">-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/AttendeNO"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_margin="4dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:hint="Attendee No"-->
+                        <!--android:inputType="number" />-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite">
+
+                    <EditText
+                        android:id="@+id/budget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:hint="Budget"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite">
+
+                    <EditText
+                        android:id="@+id/awardcode"
+                        android:layout_width="match_parent"
+                        android:layout_margin="4dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Award Code" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite">
+
+                    <EditText
+                        android:id="@+id/accountCode"
+                        android:layout_width="match_parent"
+                        android:layout_margin="4dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Account Code" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/secondbutton"
+                    android:text="next"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:id="@+id/second_activity"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite">
+
+                    <EditText
+                        android:id="@+id/donorExpenseLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:hint="Donor Expense Baseline" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite">
+
+                    <EditText
+                        android:id="@+id/locationcode"
+                        android:layout_width="match_parent"
+                        android:layout_margin="4dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Location Code" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite">
+
+                    <EditText
+                        android:id="@+id/countryCode"
+                        android:layout_width="match_parent"
+                        android:layout_margin="4dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Country Code" />
+
+
+                </android.support.design.widget.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/second_layout"
+                    android:layout_height="wrap_content">
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/create"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/secondbutton"
+                        android:text="create"
+                        android:textColor="@color/colorWhite" />
+                    <Button
+                        android:id="@+id/Createcancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/buttonround"
+                        android:text="Cancel"
+                        android:textColor="@color/colorWhite" />
+                    <Button
+                        android:id="@+id/Backcancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+                        android:background="@drawable/secondbutton"
+                        android:text="BACK"
+                        android:textColor="@color/colorWhite" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddAdmin">
+<TextView
+    android:layout_width="wrap_content"
+    android:text="User"
+    android:paddingStart="150dp"
+    android:textColor="@color/colorPrimary"
+    android:gravity="center"
+    android:layout_height="wrap_content" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/firstActivity"
+        android:layout_width="match_parent"
+        android:layout_margin="36dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:background="@color/colorWhite"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/idno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="ID No"
+                android:textColor="@color/colorBlack" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite">
+
+            <EditText
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="First Name"
+                 />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:background="@color/colorWhite"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/lname"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:hint="Last Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:background="@color/colorWhite"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="Email"
+                android:textColor="@color/colorBlack" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorWhite"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="Phone No"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorWhite"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/roles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="Roles"
+                />
+        </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                 android:gravity="center"
+                android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/create"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/secondbutton"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:drawableLeft="@drawable/ic_add_black_24dp"
+                        android:text="SAVE"
+                        android:textColor="@color/colorWhite" />
+                    <Button
+                        android:id="@+id/Clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buttonround"
+                        android:gravity="center"
+                        android:drawableLeft="@drawable/ic_delete_forever_black_24dp"
+                        android:text="CANCEL"
+                        android:textColor="@color/colorWhite" />
+                </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

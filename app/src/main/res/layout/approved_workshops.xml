@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:fadingEdge="horizontal"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:elevation="0dp"
+        android:fadingEdge="horizontal"
+        android:layout_weight="3"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/button_focused1"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/progress_indicator_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/approvedworkshopname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:text="workshop" />
+
+                <TextView
+                    android:id="@+id/approvedtimeanddate"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:text="time" />
+
+                <TextView
+                    android:id="@+id/approvedlocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:text="location" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        android:text="status" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:orientation="vertical"
+                    >
+                    <Button
+                        android:id="@+id/button_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fadingEdge="horizontal"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:fadingEdgeLength="5dp"
+                        android:background="@drawable/secondbutton"
+                        android:text="MORE.."
+                        android:textColor="@color/colorWhite" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone"
+
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/sections"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/approvedcreated_by"
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="created_by" />
+            <TextView
+                android:id="@+id/awardcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:text="AwaordCode" />
+            <TextView
+                android:id="@+id/accountCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:text="accountCode" />
+            <TextView
+                android:id="@+id/DonorBaseLine"
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="DonorBaseLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:id="@+id/Confirm_approval"
+                    android:background="@drawable/secondbutton"
+                    android:drawableLeft="@drawable/ic_check_black_24dp"
+                    android:text="Approve"
+                    android:visibility="gone"
+                    android:layout_margin="24dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="Reject"
+                    android:drawableLeft="@drawable/ic_close_black_24dp"
+                    android:id="@+id/Decline_approval"
+                    android:layout_margin="24dp"
+                    android:visibility="gone"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/buttonround"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="Reject"
+                    android:drawableLeft="@drawable/ic_close_black_24dp"
+                    android:id="@+id/markComplte"
+                    android:layout_margin="24dp"
+                    android:visibility="gone"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/buttonround"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="Register"
+                    android:id="@+id/register"
+                    android:visibility="gone"
+                    android:drawableRight="@drawable/ic_add_black_24dp"
+                    android:layout_margin="24dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/buttonround"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+</LinearLayout>

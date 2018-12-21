@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:id="@+id/approval_layout"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fadingEdge="horizontal"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/button_focused1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/progress_indicator_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/approvedworkshopname"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Workshop:" />
+
+                <TextView
+                    android:id="@+id/approvedtimeanddate"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Time:" />
+
+                <TextView
+                    android:id="@+id/approvedlocation"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Location:" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:paddingLeft="10dp"
+                    android:text="Status" />
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/activity_horizontal_margin"
+                    android:paddingTop="10dp">
+
+                    <Button
+                        android:id="@+id/button_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:background="@drawable/secondbutton"
+                        android:fadingEdge="horizontal"
+                        android:fadingEdgeLength="5dp"
+                        android:text="REVIEW.."
+                        android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sections"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:visibility="gone"
+            android:background="@color/button_focused1"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="48dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Consultants" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:id="@+id/Consultants"
+                    android:layout_height="wrap_content">
+                </Spinner>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="58dp"
+                            android:paddingLeft="10dp"
+                            android:text="Facilitator" />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:id="@+id/facilitat"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/Attach1"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:id="@+id/Attach"
+                        android:text="Attach"
+                        android:textColor="@color/colorWhite"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            <TextView
+                android:id="@+id/awardcode"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="48dp"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="AwaordCode" />
+            <TextView
+                android:id="@+id/approvedcreated_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:layout_marginEnd="58dp"
+                android:paddingLeft="10dp"
+                android:text="created_by" />
+
+            <TextView
+                android:id="@+id/accountCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:paddingLeft="10dp"
+                android:text="accountCode" />
+
+            <TextView
+                android:id="@+id/DonorBaseLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:paddingLeft="10dp"
+                android:text="DonorBaseLine" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/buttons"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Confirm_approval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="24dp"
+                    android:background="@drawable/secondbutton"
+                    android:drawableLeft="@drawable/ic_check_black_24dp"
+                    android:text="Approve"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/Decline_approval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="24dp"
+                    android:background="@drawable/secondbutton"
+                    android:drawableLeft="@drawable/ic_close_black_24dp"
+                    android:text="Reject"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/suspend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="24dp"
+                    android:background="@drawable/secondbutton"
+                    android:drawableLeft="@drawable/ic_close_black_24dp"
+                    android:text="suspend"
+                    android:textColor="@color/colorWhite" />
+                <Button
+                    android:id="@+id/send_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="24dp"
+                    android:background="@drawable/secondbutton"
+                    android:drawableLeft="@drawable/ic_close_black_24dp"
+                    android:text="sendback"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/reason"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:paddingLeft="10dp"
+
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:text="Do You want to send the workshop back for review ?"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/reasons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="Reason"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/ConfirmSendBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="@drawable/secondbutton"
+        android:drawableLeft="@drawable/ic_check_black_24dp"
+        android:text="Yes"
+        android:textColor="@color/colorWhite" />
+        <Button
+            android:id="@+id/ConfirmSendBackno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:background="@drawable/buttonround"
+            android:drawableLeft="@drawable/ic_close_black_24dp"
+            android:text="No"
+            android:textColor="@color/colorWhite" />
+</LinearLayout>
+</LinearLayout>
+            <LinearLayout
+                android:id="@+id/suspendReason"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:visibility="gone"
+
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Do You Want To Suspend The workshop ?"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/suspendReasons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:hint="Reason"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/ConfirmSuspend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="24dp"
+                    android:background="@drawable/secondbutton"
+                    android:drawableLeft="@drawable/ic_check_black_24dp"
+                    android:text="Yes"
+                    android:textColor="@color/colorWhite" />
+                    <Button
+                        android:id="@+id/ConfirmSuspendno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="24dp"
+                        android:background="@drawable/buttonround"
+                        android:drawableLeft="@drawable/ic_close_black_24dp"
+                        android:text="No"
+                        android:textColor="@color/colorWhite" />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+

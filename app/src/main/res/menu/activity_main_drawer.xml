@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/CreateWorkshop"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Create WorkShop" />
+        <item
+            android:id="@+id/review"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Review workShop" />
+        <item
+            android:id="@+id/AddAdmins"
+            android:icon="@drawable/ic_playlist_add_black_24dp"
+            android:title="Add Admins" />
+        <item
+            android:id="@+id/AddAttendes"
+            android:icon="@drawable/ic_person_add_black_24dp"
+            android:title="Add Attendees" />
+
+        <item
+            android:id="@+id/rejected"
+            android:icon="@drawable/ic_close_black2_24dp"
+            android:title="WorkShop Rejected" />
+        <item
+            android:id="@+id/CompletedWorkshop"
+            android:icon="@drawable/ic_done_all_black_24dp"
+            android:title="Workshops Completed" />
+        <item
+            android:id="@+id/pending"
+            android:icon="@drawable/cast_ic_notification_on"
+            android:title="Pending Approval" />
+        <item
+            android:id="@+id/approved"
+            android:icon="@drawable/ic_done_all_black_24dp"
+            android:title="WorkShop Approved" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Log Out" />
+
+        </menu>
+    </item>
+
+</menu>
